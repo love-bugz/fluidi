@@ -1,5 +1,5 @@
 export const fetcher = (url, data = undefined) =>
-  fetch(window.location.origin + url, {
+  fetch(process.env.apiUrl + "/" + url, {
     method: data ? "POST" : "GET",
     credentials: "include",
     headers: {

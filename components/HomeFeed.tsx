@@ -18,9 +18,21 @@ function HomeFeed() {
 
   return (
     <main className={classes.root}>
-      {feed.map(({ id, text, author }) => {
-        return <Convo key={id} title={text} author={author.username} />;
-      })}
+      {feed.map(
+        ({ id, title, text, createdAt, createdBy: { handle, icon } }) => {
+          return (
+            <Convo
+              key={id}
+              id={id}
+              title={title}
+              text={text}
+              handle={handle}
+              icon={icon}
+              createdAt={createdAt}
+            />
+          );
+        }
+      )}
     </main>
   );
 }
