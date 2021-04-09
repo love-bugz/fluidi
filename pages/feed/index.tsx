@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title key="title-lucid">Lucid</title>
+        <title key="title-fluidi">Fluidi</title>
         <link key="icon-favicon" rel="icon" href="/favicon.ico" />
       </Head>
       <PageHeader />
